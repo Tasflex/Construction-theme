@@ -1,216 +1,328 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-  }
-  
-  .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
- 
-  }
-  
-  /* Header */
-  header {
-    background: #333;
-    color: #f1e4e4;
-    padding: 40px 0;
-  }
-  
-  header h1 {
-    margin: 0;
-    text-align: center;
-    color: #eee8e8;
-  }
-  /* Links */
-  nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-  }
-  
-  nav ul li {
-    display: block;
-    margin: 15px, 0px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  /* Hero Secction */
-  .hero {
-    background: url('/img/anders-jilden--N2UXcPBIYI-unsplash.jpg') no-repeat center center/cover;
-    color: #f1eff0;
-   
-    text-align: center;
-    padding: 100px 0;
-  }
-  
-  .hero h2 {
-    font-size: 3rem;
-    margin: 0;
-  }
-  
-  .hero p {
-    font-size: 1.5rem;
-  }
-  
-  .hero .btn {
-    background: #0fca47;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  /* About Section */
-  .about {
-    padding: 50px 0;
-    text-align: center;
-  }
-  
-  .about img {
-    max-width: 100%;
-    border-radius: 10px;
-  }
-  
-  /* Services Section */
-  .services {
-    background: #f4f4f4;
-    padding: 50px 0;
-    text-align: center;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
 
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-  /* .services list{
-    columns: 3 150px;
-    column-rule: 3px solid #940b0b;
-    column-gap: 3rem;
-} */
-  
-  .service-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-  }
-  
+/* Header */
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: block;
+  gap: 1em;
+  margin: 0px 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hamburger Menu (Hidden by Default) */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  background: url('/img/anders-jilden--N2UXcPBIYI-unsplash.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}
+
+.hero .btn {
+  background: #ff6f61;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* About Section */
+.about {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Services Section */
+.services {
+  background: #f4f4f4;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.service-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  width: 30%;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.service-item img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.service-item h3 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.service-item p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive Design for Services Section */
+@media (max-width: 768px) {
   .service-item {
-    width: 30%;
+    width: 100%;
     margin-bottom: 20px;
   }
-  
-  .service-item img {
-    max-width: 100%;
-    border-radius: 10px;
+}
+
+/* Projects Section */
+.projects {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.project-gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project-gallery img {
+  width: 30%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact input, .contact textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact .btn {
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Blog Section */
+.blog {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.blog-posts {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.blog-post {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.blog-post img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.blog-post h3 {
+  margin: 10px 0;
+}
+
+.blog-post .btn {
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* || SMALL */
+@media screen and (min-width: 320px) {
+  body {
+    background-color: green;
+    background-image: radial-gradient(rgb(231, 24, 162), green);
   }
-  
-  /* Projects Section */
-  .projects {
-    padding: 50px 0;
-    text-align: center;
+
+  nav {
+    display: none;
   }
-  
-  .project-gallery {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+
+  .hamburger {
+    display: block;
+    text-align: right;
+    padding: 10px;
   }
-  
-  .project-gallery img {
-    width: 30%;
-    margin-bottom: 20px;
-    border-radius: 10px;
-  }
-  
-  /* Contact Section */
-  .contact {
-    padding: 50px 0;
-    text-align: center;
-  }
-  
-  .contact form {
+
+  nav ul.active {
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-  
-  .contact input, .contact textarea {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .contact .btn {
     background: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  /* Footer */
-  footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
   }
 
-  /* || SMALL */
-@media screen and (min-width: 320px){
-  body{
-     background-color: green; 
-     background-image: radial-gradient(rgb(231, 24, 162), green);
-  }
-  nav{
-      display: none;
+  nav ul li {
+    margin: 10px 0;
+    text-align: center;
   }
 }
 
 /* || MEDIUM */
-@media screen and (min-width: 412px){
-  body{
-     background-color: gold; 
-     background-image: radial-gradient(rgb(11, 70, 146), gold);
+@media screen and (min-width: 375px) {
+  body {
+    background-color: gold;
+    background-image: radial-gradient(rgb(11, 70, 146), gold);
+  }
+
+  nav {
+    display: block;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
   }
 }
 
 /* || LARGE */
-@media screen and (min-width: 992px){
-  body{
-     background-color: firebrick; 
-     background-image: radial-gradient(whitesmoke, firebrick);
+@media screen and (min-width: 992px) {
+  body {
+    background-color: firebrick;
+    background-image: radial-gradient(whitesmoke, firebrick);
   }
 }
 
 /* || XL */
-@media screen and (min-width: 1200px){
-  body{
-     background-color: rebeccapurple; 
-     background-image: radial-gradient(whitesmoke, rebeccapurple);
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: rebeccapurple;
+    background-image: radial-gradient(whitesmoke, rebeccapurple);
   }
 }
 
 /* || MOBILE DEVICE LANDSCAPE */
 @media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
-  body{
-     background-color: dodgerblue; 
-     background-image: radial-gradient(whitesmoke, dodgerblue);
+  body {
+    background-color: dodgerblue;
+    background-image: radial-gradient(whitesmoke, dodgerblue);
   }
 
-  h1, h2{
-      font-size: 1.5rem;
+  h1, h2 {
+    font-size: 1.5rem;
   }
-  nav{
-      display: none;
+
+  nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    text-align: right;
+    padding: 10px;
+  }
+
+  nav ul.active {
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+    text-align: center;
   }
 }
-
